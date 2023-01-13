@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import ua.ukma.edu.programistich.kmmtwitter.android.account.AccountScreen
 import ua.ukma.edu.programistich.kmmtwitter.android.login.LoginScreen
+import ua.ukma.edu.programistich.kmmtwitter.android.main.MainScreen
 
 @Composable
 fun NavigationGraph(startRoute: String) {
@@ -14,8 +15,8 @@ fun NavigationGraph(startRoute: String) {
         composable(NavigationRoute.Login.name) {
             LoginScreen(navController = navController)
         }
-        composable(NavigationRoute.Account.name) {
-            AccountScreen(navController = navController)
+        composable(NavigationRoute.Main.name) {
+            MainScreen()
         }
     }
 }

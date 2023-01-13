@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                 val splashViewModel = SplashViewModel()
                 val startRoute = splashViewModel
                     .isExistToken()
-                    .let { if (it) NavigationRoute.Account else NavigationRoute.Login }
+                    .let { if (it) NavigationRoute.Main else NavigationRoute.Login }
 
                 NavigationGraph(startRoute = startRoute.name)
             }

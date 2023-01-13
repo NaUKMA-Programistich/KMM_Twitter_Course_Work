@@ -10,6 +10,5 @@ import androidx.navigation.NavController
 fun AccountScreen(navController: NavController) {
     Column {
         Text("Account Screen")
-        CircularProgressIndicator()
     }
 }

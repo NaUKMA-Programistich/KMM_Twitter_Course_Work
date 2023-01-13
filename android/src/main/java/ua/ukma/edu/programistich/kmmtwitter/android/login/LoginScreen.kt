@@ -23,7 +23,7 @@ private fun onAction(
 ) {
     when (action) {
         LoginAction.NavigateToAccount -> {
-            navController.navigate(NavigationRoute.Account.name)
+            navController.navigate(NavigationRoute.Main.name)
         }
         LoginAction.OpenTwitterAuth -> {}
         null -> {}
