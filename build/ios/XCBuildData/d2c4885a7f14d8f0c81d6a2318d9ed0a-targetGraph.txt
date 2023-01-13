@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+shared in Pods, no dependencies
+Pods-KMMTwitter in Pods, depends on:
+shared in Pods (explicit)
+KMMTwitter in ios, depends on:
+Pods-KMMTwitter in Pods (implicit dependency via file 'Pods_KMMTwitter.framework' in build phase 'Link Binary')

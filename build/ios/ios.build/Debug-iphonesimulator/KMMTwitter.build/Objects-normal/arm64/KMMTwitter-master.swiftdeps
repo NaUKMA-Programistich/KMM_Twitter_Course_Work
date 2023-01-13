@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "2035499a4d81aea2005d6254821e1ed9790622b08edea6cc840b61b46459a538"
+build_start_time: [1672867284, 581187009]
+build_end_time: [1672867287, 908838033]
+inputs:
+  "/Users/programistich/Projects/Study/CourseWork/KMMTwitter/ios/ios/ContentView.swift": [1672329081, 544976234]
+  "/Users/programistich/Projects/Study/CourseWork/KMMTwitter/ios/ios/Login/LoginScreen.swift": [1672330281, 608319282]
+  "/Users/programistich/Projects/Study/CourseWork/KMMTwitter/ios/ios/Login/TwitterAPI.swift": [1672867238, 917571783]
+  "/Users/programistich/Projects/Study/CourseWork/KMMTwitter/ios/ios/iOSApp.swift": [1672214916, 959283351]

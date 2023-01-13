@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "ua.ukma.edu.programistich.kmmtwitter.android-mergeDebugResources-52:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/programistich/.gradle/caches/transforms-3/f635de319dc922b0bebfb9d96dc8720c/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/programistich/.gradle/caches/transforms-3/549f5c4978606cbbd8da7cbbd30beb91/transformed/core-1.8.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
