@@ -4,7 +4,7 @@ import kotlinx.coroutines.delay
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import ua.ukma.edu.programistich.kmmtwitter.auth.AuthRepository
-import ua.ukma.edu.programistich.kmmtwitter.common.ViewModel
+import ua.ukma.edu.programistich.kmmtwitter.common.viewmodel.ViewModel
 import ua.ukma.edu.programistich.kmmtwitter.login.models.LoginAction
 import ua.ukma.edu.programistich.kmmtwitter.login.models.LoginEvent
 import ua.ukma.edu.programistich.kmmtwitter.login.models.LoginState

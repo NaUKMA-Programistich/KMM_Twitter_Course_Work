@@ -1,12 +1,8 @@
 plugins {
     kotlin("multiplatform")
+    kotlin("plugin.serialization")
     kotlin("native.cocoapods")
     id("com.android.library")
-    id("com.google.devtools.ksp")
-}
-
-dependencies {
-    ksp("com.daugeldauge.kinzhal:kinzhal-processor:0.0.4")
 }
 
 kotlin {
@@ -27,6 +23,8 @@ kotlin {
         }
     }
 
+    val ktorVersion = "2.2.2"
+
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -41,9 +39,29 @@ kotlin {
 
                 // Coroutines
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+
+                // Ktor
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.ktor:ktor-client-json:$ktorVersion")
+                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+                implementation("io.ktor:ktor-client-serialization:$ktorVersion")
+                implementation("io.ktor:ktor-client-logging:$ktorVersion")
+
+                // Datetime
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
+
+                // Encode/Decode
+                implementation("com.squareup.okio:okio:3.3.0")
+                // Crypto
+                implementation("com.appmattus.crypto:cryptohash:0.10.1")
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                implementation("io.ktor:ktor-client-android:$ktorVersion")
+            }
+        }
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
@@ -52,6 +70,10 @@ kotlin {
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
+
+            dependencies {
+                implementation("io.ktor:ktor-client-ios:$ktorVersion")
+            }
         }
     }
 }

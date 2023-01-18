@@ -1,4 +1,4 @@
-package ua.ukma.edu.programistich.kmmtwitter.common
+package ua.ukma.edu.programistich.kmmtwitter.common.viewmodel
 
 import com.adeo.kviewmodel.KViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -36,11 +36,6 @@ abstract class ViewModel<State, Action, Event>(initialState: State) : KViewModel
     }
 
     abstract fun obtainEvent(viewEvent: Event)
-    fun clearAction() {
-        viewModelScope.launch {
-            _viewActions.emit(null)
-        }
-    }
 
     fun withViewModelScope(block: suspend CoroutineScope.() -> Unit) {
         viewModelScope.launch(block = block)

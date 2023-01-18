@@ -27,5 +27,6 @@ struct WrapperScreen<VM, ViewState, Action, Event, UI> : View where VM: ViewMode
         }.onReceive(toPublisher(viewModel.viewActions())) { action in
             onAction(action)
         }
+        .padding(.horizontal)
     }
 }

@@ -5,7 +5,7 @@ import androidx.compose.runtime.DisallowComposableCalls
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.remember
-import ua.ukma.edu.programistich.kmmtwitter.common.ViewModel
+import ua.ukma.edu.programistich.kmmtwitter.common.viewmodel.ViewModel
 
 @Composable
 fun <T : ViewModel<State, Action, Event>, State, Action, Event> WrapperScreen(
