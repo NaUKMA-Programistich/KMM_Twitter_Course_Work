@@ -1,5 +1,5 @@
 package ua.ukma.edu.programistich.kmmtwitter.common
 
-expect class PlatformEncoder constructor(){
+expect object PlatformEncoder {
     fun encode(str: String): String
 }

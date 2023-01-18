@@ -72,6 +72,7 @@ class AuthRepository {
             .sorted()
 
         val parameters = list.joinToString("&").encode()
+        println("parameters: $parameters")
         val signatureBaseString = "$method&${url.encode()}&$parameters"
         val signatureKey = "${consumerSecret.encode()}&${accessSecret.encode()}"
 
@@ -85,6 +86,6 @@ class AuthRepository {
     }
 
     private fun String.encode(): String {
-        return PlatformEncoder().encode(this)
+        return PlatformEncoder.encode(this)
     }
 }

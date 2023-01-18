@@ -52,7 +52,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
 
                 // Encode/Decode
-                implementation("com.squareup.okio:okio:3.3.0")
+                implementation("com.squareup.okio:okio:3.2.0")
                 // Crypto
                 implementation("com.appmattus.crypto:cryptohash:0.10.1")
             }
